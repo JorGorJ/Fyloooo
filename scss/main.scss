@@ -1,0 +1,102 @@
+@import './colors';
+@import './components';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+
+	&__logo {
+		height: 3rem;
+	}
+
+	&__navbar {
+		&__link {
+			padding: 1rem;
+			font-size: 1.4rem;
+			text-decoration: none;
+			color: $Very-Dark-Blue;
+		}
+	}
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 5rem 2rem 0 2rem;
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 3rem 0 0 0;
+
+		&__title {
+			font-size: 2.6rem;
+			font-family: 'Open Sans', sans-serif;
+			color: $Very-Dark-Blue;
+			padding-bottom: 2rem;
+		}
+
+		&__description {
+			font-size: 1.4rem;
+			color: $Very-Dark-Blue;
+			padding-bottom: 2rem;
+		}
+
+		&__input {
+			display: flex;
+			flex-direction: column;
+			padding: 0 1rem;
+			gap: 1rem;
+			
+			.mail {
+				height: 4rem;
+				width: 100%;
+				max-width: 35rem;
+				border: 1px solid $Desaturated-Blue;
+				border-radius: 3px;
+				padding: 0 2rem;
+
+				color: $Very-Dark-Blue;
+			}
+
+			.mail::placeholder {
+				color: $Light-Gray;
+			}
+
+			.btn-mail {
+				height: 4rem;
+				width: 100%;
+				max-width: 35rem;
+				background-color: $Bright-Blue;
+				color: $Light-Grayish-Blue;
+				border: none;
+				border-radius: 3px;
+			}
+		}
+	}
+}
+
+@import './tablets';
+@import './desktop';
