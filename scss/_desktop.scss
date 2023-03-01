@@ -1,0 +1,27 @@
+@media (min-width: 1024px) {
+	.nav {
+		&__navbar {
+			&-link {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.header {
+		&__text {
+			&-title {
+				font-size: 3.6rem;
+			}
+
+			&-description {
+				font-size: 1.8rem;
+			}
+
+			&-input {
+				.btn-mail {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}

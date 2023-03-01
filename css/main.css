@@ -30,7 +30,7 @@ body {
 .nav__logo {
   height: 3rem;
 }
-.nav__navbar__link {
+.nav__navbar-link {
   padding: 1rem;
   font-size: 1.4rem;
   text-decoration: none;
@@ -42,6 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 5rem 2rem 0 2rem;
+  margin-bottom: 5rem;
 }
 .header__text {
   display: flex;
@@ -50,24 +51,26 @@ body {
   text-align: center;
   padding: 3rem 0 0 0;
 }
-.header__text__title {
+.header__text-title {
   font-size: 2.6rem;
   font-family: "Open Sans", sans-serif;
   color: hsl(243, 87%, 12%);
   padding-bottom: 2rem;
 }
-.header__text__description {
+.header__text-description {
   font-size: 1.4rem;
   color: hsl(243, 87%, 12%);
   padding-bottom: 2rem;
 }
-.header__text__input {
+.header__text-input {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
   padding: 0 1rem;
   gap: 1rem;
 }
-.header__text__input .mail {
+.header__text-input .mail {
   height: 4rem;
   width: 100%;
   max-width: 35rem;
@@ -76,27 +79,44 @@ body {
   padding: 0 2rem;
   color: hsl(243, 87%, 12%);
 }
-.header__text__input .mail::-moz-placeholder {
+.header__text-input .mail::-moz-placeholder {
   color: hsl(0, 0%, 75%);
 }
-.header__text__input .mail::placeholder {
+.header__text-input .mail::placeholder {
   color: hsl(0, 0%, 75%);
 }
-.header__text__input .btn-mail {
+.header__text-input .btn-mail {
   height: 4rem;
   width: 100%;
   max-width: 35rem;
   background-color: hsl(224, 93%, 58%);
   color: hsl(240, 75%, 98%);
+  box-shadow: 1px 1px 15px -5px black;
   border: none;
   border-radius: 3px;
+}
+
+.first-section {
+  position: relative;
+}
+.first-section .rounding {
+  position: absolute;
+  background-image: url("../images/bg-curve-mobile.svg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+}
+.first-section .productive__img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .nav__logo {
     height: 3.5rem;
   }
-  .nav__navbar__link {
+  .nav__navbar-link {
     font-size: 1.6rem;
   }
   .header {
@@ -107,57 +127,47 @@ body {
     width: 50%;
   }
   .header__text {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: start;
     width: 50%;
     text-align: left;
-    padding: 3rem 0 0 0;
   }
-  .header__text__title {
+  .header__text-title {
     font-size: 3.6rem;
     font-family: "Raleway", sans-serif;
-    color: hsl(243, 87%, 12%);
-    padding-bottom: 2rem;
   }
-  .header__text__description {
+  .header__text-description {
     font-size: 1.6rem;
-    color: hsl(243, 87%, 12%);
-    padding-bottom: 2rem;
     max-width: 50rem;
   }
-  .header__text__input {
-    display: flex;
+  .header__text-input {
     flex-direction: row;
     padding: 0;
     width: 80%;
     gap: 0;
   }
-  .header__text__input .mail {
+  .header__text-input .mail {
     height: 4.5rem;
     width: 65%;
-    max-width: 35rem;
-    border: 1px solid hsl(238, 22%, 44%);
-    border-radius: 3px;
-    padding: 0 2rem;
     margin-right: 1rem;
-    color: hsl(243, 87%, 12%);
   }
-  .header__text__input .mail::-moz-placeholder {
-    color: hsl(0, 0%, 75%);
-  }
-  .header__text__input .mail::placeholder {
-    color: hsl(0, 0%, 75%);
-  }
-  .header__text__input .btn-mail {
+  .header__text-input .btn-mail {
     height: 4.5rem;
     width: 35%;
-    max-width: 35rem;
     font-size: 1.6rem;
-    background-color: hsl(224, 93%, 58%);
-    color: hsl(240, 75%, 98%);
-    border: none;
-    border-radius: 3px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__navbar-link {
+    font-size: 1.8rem;
+  }
+  .header__text-title {
+    font-size: 3.6rem;
+  }
+  .header__text-description {
+    font-size: 1.8rem;
+  }
+  .header__text-input .btn-mail {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
