@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fd6ebbe0f4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -41,9 +42,8 @@
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.</p>
         <div class="header__text-input">
-          <label for="mail"></label>
-          <input type="email" class="mail" id="mail" placeholder="Enter your email...">
-          <input type="submit" class="btn btn-mail" value="Get Started">
+          <input type="email" class="mail input" id="mail" placeholder="Enter your email...">
+          <button class="btn btn-mail">Get Started</button>
         </div>
       </div>
     </div>
@@ -59,28 +59,32 @@
       <div class="wrapper productive">
 
         <img src="./images/illustration-2.svg" alt="" class="productive__img">
-        <div class="productive__text">
-          <h2 class="productive__text-title">Stay productive, wherever you are</h2>
-          <p class="productive__text-description">Never let location be an issue when accessing your files. Fylo has
-            you
-            covered for all of your file storage needs.</p>
-          <p class="productive__text-description productive__text-description--margin">Securely share files and folders
-            with friends, family and colleagues
-            for
-            live collaboration. No email attachments required!</p>
+        <div class="productive__content">
+          <div class="productive__content-text">
+            <h2 class="text__title">Stay productive, wherever you are</h2>
+            <p class="text__description">Never let location be an issue when accessing your files. Fylo has
+              you
+              covered for all of your file storage needs.</p>
+            <p class="text__description text__description--margin">Securely share files and
+              folders
+              with friends, family and colleagues
+              for
+              live collaboration. No email attachments required!</p>
 
-        </div>
-        <button class="productive__btn" href="#">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></button>
-        <div class="productive__card">
-          <img class="productive__card-quotes" src="./images/icon-quotes.svg" alt="">
-          <p class="productive__card-description">Fylo has improved our team productivity by an order of magnitude.
-            Since
-            making the switch our team has become a well-oiled collaboration machine.</p>
-          <div class="productive__card-user">
-            <img src="./images/avatar-testimonial.jpg" alt="" class="user__img">
-            <div class="user__details">
-              <p class="user__details-name">Kyle Burton</p>
-              <p class="user__details-job">Founder & CEO, Huddle</p>
+          </div>
+          <button class="productive__content-btn" href="#">See how Fylo works <img src="./images/icon-arrow.svg"
+              alt=""></button>
+          <div class="productive__content-card">
+            <img class="card__quotes" src="./images/icon-quotes.svg" alt="">
+            <p class="card__description">Fylo has improved our team productivity by an order of magnitude.
+              Since
+              making the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="card__user">
+              <img src="./images/avatar-testimonial.jpg" alt="" class="card__user-img">
+              <div class="card__user-details">
+                <p class="details__name">Kyle Burton</p>
+                <p class="details__job">Founder & CEO, Huddle</p>
+              </div>
             </div>
           </div>
         </div>
@@ -88,28 +92,83 @@
       </div>
     </section>
 
+    <section class="secound-section">
+
+      <div class="early-access wrapper">
+
+        <div class="early-access__text">
+          <h2 class="early-access__text-title">Get early access today</h2>
+          <p class="early-access__text-description">It only takes a minute to sign up and our free starter tier is
+            extremely generous.
+            If you have any questions, our support team would be happy to help you.</p>
+        </div>
+
+        <div class="early-access__get-mail">
+          <input type="email" class="error input mail" id="mail" placeholder="Enter your email...">
+          <button class="btn btn-mail">Get Started</button>
+        </div>
+      </div>
+    </section>
+
 
 
   </main>
 
+  <footer class="footer-bg">
+
+    <div class="wrapper footer">
+
+      <div class="footer__info">
+
+        <div class="footer__info-logo">
+          <img src="./images/logo-white.svg" alt="Logo Fylo" class="logo">
+        </div>
+
+        <div class="footer__info-phone footer__info-contact">
+          <img class="phone-image contact-image" src="./images/icon-phone.svg" alt="">
+          <a class="phone-number contact" href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
+        </div>
+
+        <div class="footer__info-mail footer__info-contact">
+          <img class="mail-image contact-image" src="./images/icon-email.svg" alt=""> <a class="adress-mail contact"
+            href="mailto:">example@fylo.com</a>
+        </div>
+
+      </div>
+
+      <div class="footer__links">
+
+        <div class="footer__links-container">
+          <a href="#" class="link">About Us</a>
+          <a href="#" class="link">Jobs</a>
+          <a href="#" class="link">Press</a>
+          <a href="#" class="link">Blog</a>
+        </div>
+
+        <div class="footer__links-container">
+          <a href="#" class="link">Contant Us</a>
+          <a href="#" class="link">Term</a>
+          <a href="#" class="link">Privacy</a>
+        </div>
+
+      </div>
+
+      <div class="footer__socials">
+
+        <a href="#" class="footer__socials-item"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="footer__socials-item"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="footer__socials-item"><i class="fa-brands fa-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer>
+
 
   <!-- 
-  
 
-  
 
   
   
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
 
   About Us
   Jobs

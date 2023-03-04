@@ -1,5 +1,6 @@
 @media (min-width: 1024px) {
 	.nav {
+		padding: 2rem 6rem;
 		&__navbar {
 			&-link {
 				font-size: 1.8rem;
@@ -8,6 +9,7 @@
 	}
 
 	.header {
+		padding: 5rem 4rem 0 4rem;
 		&__text {
 			&-title {
 				font-size: 3.6rem;
@@ -20,6 +22,98 @@
 			&-input {
 				.btn-mail {
 					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+
+	.first-section {
+		.productive {
+			padding: 0 6rem;
+			&__content {
+				&-text {
+					.text__title {
+						font-size: 3.6rem;
+					}
+
+					.text__description {
+						font-size: 1.8rem;
+					}
+				}
+
+				&-card {
+					max-width: 35rem;
+
+					.card__user {
+						&-img {
+							width: 4rem;
+							height: 4rem;
+						}
+
+						&-details {
+							height: 3.3rem;
+
+							.details__name {
+								font-size: 1.4rem;
+								height: 100%;
+							}
+
+							.details__job {
+								font-size: 1.2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.secound-section {
+		.early-access {
+			&__text {
+				&-title {
+					font-size: 2.8rem;
+				}
+
+				&-description {
+					font-size: 1.8rem;
+					max-width: 55rem;
+				}
+			}
+
+			&__get-mail {
+				align-items: start;
+			}
+		}
+	}
+
+	.footer-bg {
+		.footer {
+			padding: 7rem 6rem 3rem 6rem;
+
+			&__info {
+				&-contact {
+					.contact {
+						font-size: 1.8rem;
+					}
+				}
+			}
+			&__links {
+				&-container {
+					.link {
+						font-size: 1.8rem;
+					}
+				}
+			}
+
+			&__socials {
+				&-item {
+					width: 4.5rem;
+					height: 4.5rem;
+
+					i {
+						font-size: 1.8rem;
+					}
 				}
 			}
 		}
